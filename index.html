@@ -2,7 +2,7 @@
 <style type="text/css">
   body{overflow:hidden;}
   #iframe{display:none;}
-  #div{position:absolute;top:0px;width:70%;height:300px;margin:40px;border: 2px solid black;padding:50px;margin-top: 600px;}
+  #div{position:absolute;top:0px;width:70%;height:300px;margin:40px;border: 2px solid black;padding:50px;margin-top: 60px;}
   #saveButton{z-index:2;position:absolute;top:60px;right:5%;color: white; background-color: black; padding: 15px; text-decoration: none;}
 </style>
 <script>
@@ -56,11 +56,11 @@ function includeHTML() {
 
 <a id="saveButton" target="iframe" download="note.html" href="#" onclick="save();">Save</a>
 <iframe id="iframe"></iframe>
-<div contenteditable id="div" style="margin-top: 600px; margin-left: 60px;">
+<div contenteditable id="div" style="margin-top: 600px; margin-left: 60px">
   <b>Bold Me</b> Or Don't
 </div>
 
-<div w3-include-html="note.html"></div>
+<div w3-include-html="note.html" style="margin-top:600px;"></div>
 
 <script>
 includeHTML();
